@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Profile</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="profile.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="website-name">PatternFly</div>
+
+      <div class="nav-links">
+        <a href="#" class="active">Home</a>
+        <a href="#">Page 1</a>
+        <a href="#">Page 2</a>
+      </div>
+
+      <div class="nav-right">
+        <a href="signup.html">
+          <i class="fa-solid fa-user"></i>
+          Sign Up
+        </a>
+
+        <a href="#" id="signout">
+          <i class="fa-solid fa-right-from-bracket"></i>
+          Sign Out
+        </a>
+      </div>
+    </nav>
+
+    <main class="profile-page">
+      <section class="left-section">
+        <label for="edit-modal" class="edit-button">
+          <i class="fa-solid fa-pen"></i>
+        </label>
+
+        <div class="profile-header">
+          <div class="profile-image">
+            <i class="fa-solid fa-user" id="default-profile-icon"></i>
+            <img
+              id="profile-image-display"
+              src=""
+              alt="Profile Picture"
+              style="display: none"
+            />
+          </div>
+
+          <h1 id="profile-name">Tarun Byreddy</h1>
+
+          <p id="profile-designation">Developer Trainee</p>
+        </div>
+
+        <div class="profile-details">
+          <div class="detail">
+            <i class="fa-solid fa-location-dot"></i>
+            <span id="profile-address">Masjid Banda, Hyderabad</span>
+          </div>
+
+          <div class="detail">
+            <i class="fa-solid fa-phone"></i>
+            <span id="profile-contact">8249618325</span>
+          </div>
+
+          <div class="detail">
+            <i class="fa-solid fa-envelope"></i>
+            <span id="profile-email">tarun.byreddy@beehyv.com</span>
+          </div>
+
+          <div class="detail">
+            <i class="fa-solid fa-link"></i>
+            <a id="profile-link" href="#" target="_blank">
+              https://git.beehyv.com/tarun.byreddy
+            </a>
+          </div>
+
+          <div class="detail">
+            <i class="fa-solid fa-language"></i>
+            <span id="profile-language">English</span>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="#">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+
+          <a href="#">
+            <i class="fa-brands fa-soundcloud"></i>
+          </a>
+        </div>
+      </section>
+
+      <section class="right-section">
+        <h2>BACKGROUND</h2>
+
+        <div class="content-section">
+          <div class="section-icon">
+            <i class="fa-solid fa-address-card"></i>
+          </div>
+
+          <div class="section-content">
+            <h2>ABOUT</h2>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+
+        <div class="content-section">
+          <div class="section-icon">
+            <i class="fa-solid fa-building"></i>
+          </div>
+
+          <div class="section-content">
+            <h2>WORK EXPERIENCE</h2>
+
+            <h3>Project 1, Java, Spring, React</h3>
+
+            <p class="small-text">
+              Jul, 2026 - Aug, 2026
+              <span>◷ 1 month</span>
+            </p>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+
+            <ul>
+              <li>Random point 1</li>
+              <li>Random point 2</li>
+              <li>Random point 3</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="content-section">
+          <div class="section-icon">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+          </div>
+
+          <div class="section-content">
+            <h2>SKILLS</h2>
+
+            <div class="skill">
+              <strong>Web Development</strong>
+
+              <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Javascript</span>
+              </div>
+            </div>
+
+            <div class="skill">
+              <strong>Compression</strong>
+
+              <div class="tags">
+                <span>Mpeg</span>
+                <span>MP4</span>
+                <span>GIF</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-section">
+          <div class="section-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+
+          <div class="section-content">
+            <h2>EDUCATION</h2>
+
+            <h3>Bachelor of Technology, IIT ISM Dhanbad</h3>
+
+            <p class="small-text">oct, 2022 - may, 2026</p>
+
+            <p>
+              <em>CGPA: 8.00</em>
+            </p>
+
+            <div class="tags">
+              <span>DB1101 - Computer Graphics</span>
+              <span>CS2011 - Java Introduction</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-section">
+          <div class="section-icon">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+
+          <div class="section-content">
+            <h2>INTERESTS</h2>
+
+            <h3>Wildlife</h3>
+
+            <div class="tags">
+              <span>Cats</span>
+              <span>Trees</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <button class="bottom-right-button" type="button">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <input type="checkbox" id="edit-modal" class="modal-toggle" />
+
+    <div class="modal">
+      <div class="modal-box">
+        <div class="modal-header">
+          <h2>Your Details</h2>
+
+          <label for="edit-modal" class="close-button">
+            &times;
+          </label>
+        </div>
+
+        <form class="modal-form" id="edit-form">
+          <div class="modal-fields">
+            <div class="modal-field">
+              <label for="modal-name">Name :</label>
+              <input type="text" id="modal-name" required />
+            </div>
+
+            <div class="modal-field">
+              <label for="modal-designation">Designation :</label>
+              <input type="text" id="modal-designation" required />
+            </div>
+
+            <div class="modal-field">
+              <label for="modal-address">Address :</label>
+              <input type="text" id="modal-address" required />
+            </div>
+
+            <div class="modal-row">
+              <div class="modal-field">
+                <label for="modal-contact">Contact Number :</label>
+                <input type="tel" id="modal-contact" required />
+              </div>
+
+              <div class="modal-field">
+                <label for="modal-email">Email :</label>
+                <input type="email" id="modal-email" required />
+              </div>
+            </div>
+
+            <div class="modal-row">
+              <div class="modal-field">
+                <label for="modal-link">Link :</label>
+                <input type="url" id="modal-link" required />
+              </div>
+
+              <div class="modal-field">
+                <label for="modal-language">Language :</label>
+
+                <select id="modal-language" required>
+                  <option value="English">English</option>
+                  <option value="Hindi">Hindi</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="modal-field">
+              <label for="profile-picture">
+                Profile Picture :
+              </label>
+
+              <input
+                type="file"
+                id="profile-picture"
+                accept="image/*"
+              />
+            </div>
+          </div>
+
+          <div class="modal-image">
+            <div class="large-profile-image">
+              <i
+                class="fa-solid fa-user"
+                id="modal-default-profile-icon"
+              ></i>
+
+              <img
+                id="profile-picture-display"
+                src=""
+                alt="Profile Picture"
+                style="display: none"
+              />
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <label for="edit-modal" class="save-button-label">
+              <button type="submit" class="save-button">
+                Save
+              </button>
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

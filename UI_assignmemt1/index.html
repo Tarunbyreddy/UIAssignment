@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+
+    <main class="login-page">
+
+        <div class="language-container">
+            <label for="language">Language:</label>
+            <select name="language" id="language">
+                <option value="english">English</option>
+                <option value="hindi">Hindi</option>
+            </select>
+        </div>
+
+
+        <section class="login-container">
+
+            <div class="logo">
+                <img src="assets/icon.svg" alt="LOGO">
+                <h1>PatternFly</h1>
+            </div>
+
+            <h1>Login To Your Account</h1>
+
+            <form id="login-form">
+
+                <div class="form">
+                    <label for="username">Username</label>
+
+                    <input type="text" id="username" name="username"
+                        placeholder="Enter your username" required
+                    >
+                </div>
+
+                <div class="form">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password"
+                        placeholder="Enter your password" required>
+                </div>
+
+                <div class="form-rem">
+
+                    <label class="remember-me">
+                        <input type="checkbox">
+                        Keep me logged in for 30 days
+                    </label>
+
+                    <a href="#">Forgot password?</a>
+
+                </div>
+
+                <p id="login-error"></p>
+
+                <div class="form">
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+            <div class="signup">
+                <span>Need an account?</span>
+                <a href="signup.html">Sign up</a>
+            </div>
+        </section>
+        <footer class="footer">
+            <a href="#">Terms of Use</a>
+            <span>·</span>
+            <a href="#">Help</a>
+            <span>·</span>
+            <a href="#">Privacy Policy</a>
+        </footer>
+    </main>
+    <script src = "script.js"></script>
+</body>
+
+
+</html>

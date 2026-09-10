@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#login-error {
+    display: none;
+    margin-bottom: 15px;
+    color: #d9534f;
+    font-size: 14px;
+    text-align: center;
+}
+
+.login-page {
+    min-height: 100vh;
+
+    background-image: url("assets/background_image.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: white;
+}
+
+.language-container {
+    position: absolute;
+
+    top: 25px;
+    right: 30px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.language-container label {
+    font-size: 14px;
+    color: white;
+}
+
+.language-container select {
+    padding: 7px 10px;
+
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+    background-color: white;
+    color: #555;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+.login-container {
+    width: 400px;
+
+    margin-top: 70px;
+    padding: 35px 40px 35px;
+
+    background-color: white;
+
+    color: #555;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 35px;
+}
+
+.logo img {
+    width: 55px;
+    height: 55px;
+}
+
+.logo h1 {
+    font-size: 32px;
+
+    letter-spacing: 6px;
+
+    font-weight: 600;
+
+    color: #444;
+}
+
+
+.login-container > h1 {
+    text-align: center;
+
+    margin-bottom: 30px;
+
+    font-size: 24px;
+
+    font-weight: 400;
+
+    color: #555;
+}
+
+.form {
+    margin-bottom: 15px;
+}
+
+.form > label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 14px;
+
+    color: #555;
+}
+
+.form input[type="text"],
+.form input[type="password"] {
+    width: 100%;
+    padding: 10px 13px;
+    border: 1px solid #bbb;
+    font-size: 14px;
+    color: #444;
+    background-color: white;
+}
+
+.form input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+.form input:focus {
+    outline: none;
+
+    border-color: #3399cc;
+}
+
+.form-rem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 12px;
+}
+
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #555;
+}
+
+
+.remember-me input {
+    width: auto;
+}
+
+
+.form-rem a {
+    color: #428bca;
+    text-decoration: none;
+}
+
+
+.form-rem a:hover {
+    text-decoration: underline;
+}
+
+.form button {
+    width: 100%;
+    padding: 9px;
+
+    border: none;
+
+    background: teal;
+    color: white;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.form button:hover {
+    background: #168ac0;
+}
+
+.signup {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+
+.signup span {
+    color: #aaa;
+}
+
+
+.signup a {
+    margin-left: 5px;
+    color: #428bca;
+    text-decoration: none;
+}
+
+
+.signup a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    font-size: 12px;
+}
+
+
+.footer a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+
+    .language-container {
+        top: 15px;
+        right: 15px;
+    }
+
+    .login-container {
+        width: 90%;
+
+        max-width: 400px;
+
+        margin-top: 60px;
+
+        padding: 30px 25px;
+    }
+
+    .logo {
+        gap: 10px;
+    }
+
+    .logo img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .logo h1 {
+        font-size: 25px;
+        letter-spacing: 4px;
+    }
+
+    .login-container > h1 {
+        font-size: 21px;
+    }
+
+    .form-rem {
+        flex-wrap: wrap;
+
+        gap: 10px;
+    }
+
+}
+
+
+@media print {
+
+    .login-page {
+        background-image: none;
+        background-color: #eeeeee;
+        color: black;
+    }
+
+
+    .login-container {
+        color: black;
+    }
+
+
+    .logo h1,
+    .login-container > h1,
+    .form > label,
+    .remember-me {
+        color: black;
+    }
+
+    .footer a {
+        color: black;
+    }
+
+}
